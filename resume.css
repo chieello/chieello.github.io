@@ -38,11 +38,12 @@ body {
   background-color: lightblue;
  
   }
-#inner { 
+#inner 
+{ 
  padding: 50px 90px;
  margin: 80px auto;
  background:#ECE9E1;
- border: solid rgb(80, 77, 77);
+ border: solid rgb(185, 179, 179);
  border-width: 8px 0 2px 0; 
  }
 .yui-gf { 
