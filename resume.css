@@ -12,152 +12,169 @@
 
 
 .msg {
-   padding: 10px; 
-   background: #222;
-   position: relative;
-   }
-.msg h1 {
-   color: #fff; 
-   }
-.msg a { 
-  margin-left: 20px;
-  background: #408814;
-  color: white;
-  padding: 4px 8px;
-   text-decoration: none; 
+  padding: 10px; 
+  background: #222;
+  position: relative;
   }
+.msg h1 {
+  color: #fff; 
+  }
+.msg a { 
+ margin-left: 20px;
+ background: #408814;
+ color: white;
+ padding: 4px 8px;
+  text-decoration: none; 
+ }
 .msg a:hover {
-   background: #266400;
-   }
+  background: #266400;
+  }
 
 /* //-- yui-grids style overrides -- */
 body {
-   font-family: Georgia; 
-   color: #444;
-   }
+ padding: 100px;
+  font-family: Georgia; 
+  color: #444;
+  background-color: lightblue;
+ 
+  }
 #inner { 
-  padding: 10px 80px;
-  margin: 80px auto;
-  background: rgb(209, 199, 199);
-  border: solid rgb(211, 201, 201);
-  border-width: 8px 0 2px 0; 
-  }
+ padding: 50px 90px;
+ margin: 80px auto;
+ background:#ECE9E1;
+ border: solid rgb(80, 77, 77);
+ border-width: 8px 0 2px 0; 
+ }
 .yui-gf { 
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #ccc; 
-  }
+ margin-bottom: 2em;
+ padding-bottom: 2em;
+ border-bottom: 1px solid rgb(13, 11, 11); 
+ }
 
 /* //-- header, body, footer -- */
 #hd {
-  margin: 2.5em 0 3em 0;
-  padding-bottom: 1.5em; 
-  border-bottom: 1px solid #ccc
-   }
-#hd h2 { 
-  text-transform: uppercase;
-  letter-spacing: 2px; 
+ margin: 2.5em 0 3em 0;
+ padding-bottom: 1.5em; 
+ border-bottom: 1px solid rgb(21, 19, 19)
   }
+#hd h2 { 
+ text-transform: uppercase;
+ letter-spacing: 2px; 
+ }
 #bd, #ft { 
-  margin-bottom: 2em;
+ margin-bottom: 2em;
 }
 
 /* //-- footer -- */
 #ft { 
-  padding: 1em 0 5em 0;
-  font-size: 92%; 
-  border-top: 1px solid #ccc;
-  text-align: center;
+ padding: 1em 0 5em 0;
+ font-size: 92%; 
+ border-top: 1px solid rgb(16, 15, 15);
+ text-align: center;
 }
 #ft p {
-  margin-bottom: 0; 
-  text-align: center; 
-   }
+ margin-bottom: 0; 
+ text-align: center; 
+  }
 
 /* //-- core typography and style -- */
 #hd h1 {
-  font-size: 48px;
-  text-transform: uppercase; 
-  letter-spacing: 3px;
-   }
+ font-size: 48px;
+ text-transform: uppercase; 
+ letter-spacing: 3px;
+  }
 h2 {
-  font-size: 152% 
-  }
+ font-size: 152% 
+ }
 h3, h4 { 
-  font-size: 122%; 
-  }
-h1, h2, h3, h4 { 
-  color: #333;
-  }
+ font-size: 122%; 
+ }
+h1
+ {
+     color: #000;
+ }
+h2
+ {
+     color: #0D8FCD;
+ }
+
+h4 { 
+ color:#EBB248;
+ font-size: 20px;
+ }
+h3
+ {
+     color: #000;
+ }
 p { 
-  font-size: 100%;
-  line-height: 18px; 
-  padding-right: 3em;
-   }
-a { 
-  color: #990003 
+ font-size: 100%;
+ line-height: 18px; 
+ padding-right: 3em;
   }
+a { 
+ color: #990003 
+ }
 a:hover {
-  text-decoration: none;
-   }
+ text-decoration: none;
+  }
 strong { 
-  font-weight: bold;
+ font-weight: bold;
 }
 li {
-  line-height: 24px;
-  border-bottom: 1px solid #ccc;
-   }
+ line-height: 24px;
+ border-bottom: 1px solid rgb(13, 11, 11);
+  }
 p.enlarge {
-  font-size: 144%; 
-  padding-right: 6.5em;
-  line-height: 24px; 
-  }
+ font-size: 144%; 
+ padding-right: 6.5em;
+ line-height: 24px; 
+ }
 p.enlarge span {
-  color: #000 
-  }
+ color: #000 
+ }
 .contact-info {
-  margin-top: 7px; 
-  }
+ margin-top: 7px; 
+ }
 .first h2 { 
-  font-style: italic; 
-  }
+ font-style: italic; 
+ }
 .last {
-   border-bottom: 0 
-  }
+  border-bottom: 0 
+ }
 
 
 /* //-- section styles -- */
 
 a#pdf { 
-  display: block; 
-  float: left;
-  background: #666; 
-  color: white;
-  padding: 6px 50px 6px 12px; 
-  margin-bottom: 6px;
-  text-decoration: none; 
-   }
+ display: block; 
+ float: left;
+ background: #666; 
+ color: white;
+ padding: 6px 50px 6px 12px; 
+ margin-bottom: 6px;
+ text-decoration: none; 
+  }
 a#pdf:hover { 
-  background: #222;
-   }
+ background: #222;
+  }
 
 .job { 
-  position: relative;
-  margin-bottom: 1em; 
-  padding-bottom: 1em; 
-  border-bottom: 1px solid #ccc;
-   }
+ position: relative;
+ margin-bottom: 1em; 
+ padding-bottom: 1em; 
+ border-bottom: 1px solid #ccc;
+  }
 .job h4 { 
-  position: absolute; 
-  top: 0.35em; right: 0 
-  }
+ position: absolute; 
+ top: 0.35em; right: 0 
+ }
 .job p {
-   margin: 0.75em 0 3em 0; 
-  }
+  margin: 0.75em 0 3em 0; 
+ }
 
 .last {
-   border: none; 
-  }
+  border: none; 
+ }
 /* \.skills-list {  }
 .skills-list ul { margin: 0; }
 .skills-list li { margin: 3px 0; padding: 3px 0; }
@@ -170,10 +187,14 @@ a#pdf:hover {
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{
-  width:80.2%;
-  }
+ width:80.2%;
+ }
 .yui-gf div.first{
-  width:12.3%;
-  }
-
+ width:12.3%;
+ }
+ .contact-info img
+ {
+     border-color: #000;
+     border-radius: 50px;
+ }
 
