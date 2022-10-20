@@ -1,105 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="left_Side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="images/chielo.jpg.jpg" style="height: 200px; width: 200px;">
-                </div>
-                <h2>Chielo Elguerra<br><span>Student</span></h2>
-            </div>
-            <div class="contactInfo">
-                <h3 class="title">Contact Info <i class="fa fa-mobile" aria-hidden="true"></i></h3>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">123456789</span>
-                    </li>
-                 <li>
-                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text">chieloelguerra@gmail.com</span>
-                </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-                        <span class="text">www.mywebsite.com</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-                        <span class="text" href=https://www.linkedin.com/in/chielo-elguerra-432b1324b>www.linkedin.com/chielo-elguerra-432b1324b</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Talamban, Cebu City</span>
-                    </li>
-                </ul>
-            </div>
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
 
-            <div class="contactInfo education">
-                <h3 class="title">Education <i class="fa fa-pencil" aria-hidden="true"></i></h3>
-                <ul>
-                    <li>
-                       <h5>2022-2024</h5>
-                       <h4>Certificate in Computer Technology</h4>
-                       <h4>University of San Carlos</h4>
-                    </li>
-                    <li>
-                        <h5>2020-2022</h5>
-                        <h4>Senior High School-Gas Strand</h4>
-                        <h4>Mantalongon National High School-Barili</h4>
-                     </li>
-                     <li>
-                        <h5>2016-2020</h5>
-                        <h4>Junior High School</h4>
-                        <h4>Mantalongon National High School-Barili</h4>
-                     </li>
-                </ul>
-            </div>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: rgb(3, 120, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    border: blanchedalmond;
+}
+.container .left_Side
+{
+    position: relative;
+    background: #434339;
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx
+{
+    width: 100%;
+	border-radius: 50%;
+}
+.profileText .imgBx img
+{
+    height: 180px;
+	width: 180px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	border: 10px solid #fbb03b;
+	box-shadow: 6px 7px 9px 5px #fbb03b73;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+    padding: 0px 50px;
+	margin-top: 30px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 1px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight: 300; 
+}
+.container .right_Side
+{
+    position: relative;
+    background: rgb(242, 235, 235);
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0%;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
+.about .box
+{
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width:150px
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
 
-            </div>
-
-        <div class="right_Side">
-            <div class="about">
-                <h2 class="title2">Profile <i class="fa fa-user" aria-hidden="true"></i></h2>
-                <p>I am an outgoing, self-motivated, dependable, responsible, and hard worker. I am a mature team player who can adapt to any challenging situation. I can work well in a team setting as well as on my own initiative. I can work well under pressure and meet tight deadlines.
-                     I always put in mind that I can finish what I started.</p>
-            </div>
-            <div class="box">
-                <h2 class="title2">Experience <i class="fa fa-folder" aria-hidden="true"></i></h2>
-                <br>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2022 - Present</h5>
-                        <h5>Certificate in Computer Technology-Major in Software Development</h5>
-                    </div>
-                    <div class="text"></div>
-                    <h4>Software Developer Student</h4>
-                    <br>
-                    <p> I have some strong work motivation that will help me with my future job . I'm currently studying Computer Technology  in University of San Carlos and also I am one of the scholars who gotthe chance to be trained by the Passerelles Numeriques Philippines (PN), a non-government organization that helps those underprivileged student that wants to continue their college studies and also to help them
-                         become a great invidual.They mold me to  be a professional worker in an IT industry.
-                         They helped me to get confidence in talking to the public, and also showed me that this is a job where I will need to work hard with patience and strong discipline.</p>
-                </div>
-                <div class="right_Side">
-                    <div class="about">
-                        <h2 class="title2">Skills <i class="fa fa-thumbs-up" aria-hidden="true"></i></h2>
-                        <h2>Web Design</h2>
-                        <p> Creates software thing like simple websites and has a skills to design, build and improve websites that is understandable by the users and to satisfy their needs.</p>
-                        <h2>MS Office</h2>
-                        <p> Able to use MS Word to edit text documents, create templates, and automate the creation of tables of content. Running and creating functions, pivot tables, and charts. Plus, makes slideshows in PowerPoint.</p>
-                        <h2>Goal-Centered</h2>
-                        <p> The conceptualization of finishing what I have started and reaching for what is the aim of that specific project. Doesn't give up easily and always open for mistakes.</p>
-            </div>
-        </div>
-            
-       
-    </div>
-</body>
-</html>
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+@media (max-width:600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        margin-bottom: 5px;
+    }
