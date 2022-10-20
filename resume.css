@@ -1,201 +1,105 @@
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="images/chielo.jpg.jpg" style="height: 200px; width: 200px;">
+                </div>
+                <h2>Chielo Elguerra<br><span>Student</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Info <i class="fa fa-mobile" aria-hidden="true"></i></h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">123456789</span>
+                    </li>
+                 <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">chieloelguerra@gmail.com</span>
+                </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.mywebsite.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text" href=https://www.linkedin.com/in/chielo-elguerra-432b1324b>www.linkedin.com/chielo-elguerra-432b1324b</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Talamban, Cebu City</span>
+                    </li>
+                </ul>
+            </div>
 
-    v0.9: 5/28/09
+            <div class="contactInfo education">
+                <h3 class="title">Education <i class="fa fa-pencil" aria-hidden="true"></i></h3>
+                <ul>
+                    <li>
+                       <h5>2022-2024</h5>
+                       <h4>Certificate in Computer Technology</h4>
+                       <h4>University of San Carlos</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2022</h5>
+                        <h4>Senior High School-Gas Strand</h4>
+                        <h4>Mantalongon National High School-Barili</h4>
+                     </li>
+                     <li>
+                        <h5>2016-2020</h5>
+                        <h4>Junior High School</h4>
+                        <h4>Mantalongon National High School-Barili</h4>
+                     </li>
+                </ul>
+            </div>
 
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
----------------------------------------------------------------------------------
-*/
+            </div>
 
-
-.msg {
-  padding: 10px; 
-  background: #222;
-  position: relative;
-  }
-.msg h1 {
-  color: #fff; 
-  }
-.msg a { 
- margin-left: 20px;
- background: #408814;
- color: white;
- padding: 4px 8px;
-  text-decoration: none; 
- }
-.msg a:hover {
-  background: #266400;
-  }
-
-/* //-- yui-grids style overrides -- */
-body {
- padding: 100px;
-  font-family: Georgia; 
-  color: #444;
-  background-color: lightblue;
- 
-  }
-#inner 
-{ 
- padding: 50px 90px;
- margin: 80px auto;
- background:#ECE9E1;
- border: solid rgb(185, 179, 179);
- border-width: 8px 0 2px 0; 
- }
-.yui-gf { 
- margin-bottom: 2em;
- padding-bottom: 2em;
- border-bottom: 1px solid rgb(13, 11, 11); 
- }
-
-/* //-- header, body, footer -- */
-#hd {
- margin: 2.5em 0 3em 0;
- padding-bottom: 1.5em; 
- border-bottom: 1px solid rgb(21, 19, 19)
-  }
-#hd h2 { 
- text-transform: uppercase;
- letter-spacing: 2px; 
- }
-#bd, #ft { 
- margin-bottom: 2em;
-}
-
-/* //-- footer -- */
-#ft { 
- padding: 1em 0 5em 0;
- font-size: 92%; 
- border-top: 1px solid rgb(16, 15, 15);
- text-align: center;
-}
-#ft p {
- margin-bottom: 0; 
- text-align: center; 
-  }
-
-/* //-- core typography and style -- */
-#hd h1 {
- font-size: 48px;
- text-transform: uppercase; 
- letter-spacing: 3px;
-  }
-h2 {
- font-size: 152% 
- }
-h3, h4 { 
- font-size: 122%; 
- }
-h1
- {
-     color: #000;
- }
-h2
- {
-     color: #0D8FCD;
- }
-
-h4 { 
- color:#EBB248;
- font-size: 20px;
- }
-h3
- {
-     color: #000;
- }
-p { 
- font-size: 100%;
- line-height: 18px; 
- padding-right: 3em;
-  }
-a { 
- color: #990003 
- }
-a:hover {
- text-decoration: none;
-  }
-strong { 
- font-weight: bold;
-}
-li {
- line-height: 24px;
- border-bottom: 1px solid rgb(13, 11, 11);
-  }
-p.enlarge {
- font-size: 144%; 
- padding-right: 6.5em;
- line-height: 24px; 
- }
-p.enlarge span {
- color: #000 
- }
-.contact-info {
- margin-top: 7px; 
- }
-.first h2 { 
- font-style: italic; 
- }
-.last {
-  border-bottom: 0 
- }
-
-
-/* //-- section styles -- */
-
-a#pdf { 
- display: block; 
- float: left;
- background: #666; 
- color: white;
- padding: 6px 50px 6px 12px; 
- margin-bottom: 6px;
- text-decoration: none; 
-  }
-a#pdf:hover { 
- background: #222;
-  }
-
-.job { 
- position: relative;
- margin-bottom: 1em; 
- padding-bottom: 1em; 
- border-bottom: 1px solid #ccc;
-  }
-.job h4 { 
- position: absolute; 
- top: 0.35em; right: 0 
- }
-.job p {
-  margin: 0.75em 0 3em 0; 
- }
-
-.last {
-  border: none; 
- }
-/* \.skills-list {  }
-.skills-list ul { margin: 0; }
-.skills-list li { margin: 3px 0; padding: 3px 0; }
-.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
-.talent h2 { margin-bottom: 6px; }
-
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
-
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{
- width:80.2%;
- }
-.yui-gf div.first{
- width:12.3%;
- }
- .contact-info img
- {
-     border-color: #000;
-     border-radius: 50px;
- }
-
+        <div class="right_Side">
+            <div class="about">
+                <h2 class="title2">Profile <i class="fa fa-user" aria-hidden="true"></i></h2>
+                <p>I am an outgoing, self-motivated, dependable, responsible, and hard worker. I am a mature team player who can adapt to any challenging situation. I can work well in a team setting as well as on my own initiative. I can work well under pressure and meet tight deadlines.
+                     I always put in mind that I can finish what I started.</p>
+            </div>
+            <div class="box">
+                <h2 class="title2">Experience <i class="fa fa-folder" aria-hidden="true"></i></h2>
+                <br>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2022 - Present</h5>
+                        <h5>Certificate in Computer Technology-Major in Software Development</h5>
+                    </div>
+                    <div class="text"></div>
+                    <h4>Software Developer Student</h4>
+                    <br>
+                    <p> I have some strong work motivation that will help me with my future job . I'm currently studying Computer Technology  in University of San Carlos and also I am one of the scholars who gotthe chance to be trained by the Passerelles Numeriques Philippines (PN), a non-government organization that helps those underprivileged student that wants to continue their college studies and also to help them
+                         become a great invidual.They mold me to  be a professional worker in an IT industry.
+                         They helped me to get confidence in talking to the public, and also showed me that this is a job where I will need to work hard with patience and strong discipline.</p>
+                </div>
+                <div class="right_Side">
+                    <div class="about">
+                        <h2 class="title2">Skills <i class="fa fa-thumbs-up" aria-hidden="true"></i></h2>
+                        <h2>Web Design</h2>
+                        <p> Creates software thing like simple websites and has a skills to design, build and improve websites that is understandable by the users and to satisfy their needs.</p>
+                        <h2>MS Office</h2>
+                        <p> Able to use MS Word to edit text documents, create templates, and automate the creation of tables of content. Running and creating functions, pivot tables, and charts. Plus, makes slideshows in PowerPoint.</p>
+                        <h2>Goal-Centered</h2>
+                        <p> The conceptualization of finishing what I have started and reaching for what is the aim of that specific project. Doesn't give up easily and always open for mistakes.</p>
+            </div>
+        </div>
+            
+       
+    </div>
+</body>
+</html>
